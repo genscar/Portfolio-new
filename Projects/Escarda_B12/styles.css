@@ -1,0 +1,292 @@
+/* styles.css */
+
+
+.custom-header {
+  background-color: #fdf1d7;
+}
+
+.custom-header img {
+  max-width: 200px;
+  height: auto;
+}
+.inv {
+  color: #fdf1d7;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+.first {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+    url(".//_No_matter_how_difficult_life_is\,_there_is_always_hope._.jpg");
+
+  color: aliceblue;
+  font-family: "Playwrite CU", cursive;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+    url(".//In-Focus-BACOLODS-MASSKARA-FESTIVAL-1536px-1536x884.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+.bcd {
+  padding: 0%;
+  color: orangered;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+}
+#tittle {
+  color: aliceblue;
+  font-family: "Playwrite CU", cursive;
+  background-image: url(".//pngtree-brazilian-juneteenth-traditional-background-image_1069853.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+.btn-group {
+  background-color: rgb(235, 198, 130);
+  color: black;
+  font-family: "Sofia", sans-serif;
+}
+h1 {
+  font-family: "Fjalla One", sans-serif;
+}
+p {
+  font-family: "Libre Baskerville", serif;
+}
+.babaw {
+  color: white;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  
+}
+
+.carousel-inner img {
+    
+  max-height: 500px;
+  max-width: 500px;
+}
+.socials{width:17vw}
+.fb{background-color: rgb(255, 255, 255) ;}
+.fb:hover {background-color:rgb(52, 142, 226) ;}
+.ig{background-color: rgb(255, 255, 255) ;}
+.ig:hover {background-color:rgb(164, 27, 177) ;}
+.ggl{background-color: rgb(255, 255, 255) ;}
+.ggl:hover {background-color:rgb(46, 224, 100) ;}
+@media screen and (min-device-width: 318px) and (max-device-width: 321px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .bcd {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    padding-left: 4px;
+  }
+  .custom-header img {
+    max-width: 70px;
+    height: auto;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .flex-text {
+    text-align: center;
+  }
+.col{height:100vh ;
+  
+  
+width:100%;
+justify-content: center;}
+.card img{max-width: 100%; object-fit: cover;
+  height: auto;}
+
+
+.custom-header img {
+height: 80px;
+}
+.carousel-inner img{max-width: 100%; object-fit: cover;
+height: auto;
+}
+}
+
+@media screen and (max-width: 750px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .bcd {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    padding-left: 4px;
+  }
+  .custom-header img {
+    max-width: 70px;
+    height: auto;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .flex-text {
+    text-align: center;
+  }
+.col{height:118vh ;
+  
+  
+width:100%;
+justify-content: center;}
+.card img{max-width: 100%; object-fit: cover;
+  height: auto;}
+
+
+.custom-header img {
+height: 80px;
+}
+.carousel-inner img{max-width: 100%; object-fit: cover;
+height: auto;
+}
+}
+
+@media screen and (min-device-width: 766px) and (max-device-width: 768px) {
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .bcd {
+      padding: 0%;
+      margin: 0%;
+    }
+    
+  
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+    p {
+      padding-left: 4px;
+    }
+    .custom-header img {
+      max-width: 70px;
+      height: auto;
+    }
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+    .flex-text {
+      text-align: center;
+    }
+  .col{height:130vh ;
+    
+    
+  width:100%;
+  justify-content: center;}
+.card img{max-width: 100%; object-fit: cover;
+    height: auto;}
+
+
+  .custom-header img {
+  height: 80px;
+}
+.carousel-inner img{max-width: 100%; object-fit: cover;
+  height: auto;
+}
+  }
+
+  @media screen and (min-device-width: 790px) and (max-device-width: 1028px) {
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .bcd {
+      padding: 0%;
+      margin: 0%;
+    }
+    
+  
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+    p {
+      padding-left: 4px;
+    }
+    .custom-header img {
+      max-width: 70px;
+      height: auto;
+    }
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+    .flex-text {
+      text-align: center;
+    }
+  .col{height:150vh ;
+    
+    
+  width:100%;
+  justify-content: center;}
+.card img{max-width: 100%; object-fit: cover;
+    height: auto;}
+
+
+  .custom-header img {
+  height: 80px;
+}
+.carousel-inner img{max-width: 100%; object-fit: cover;
+  height: auto;
+}
+  }
+  

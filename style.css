@@ -1,0 +1,88 @@
+.gradient-background {
+  background: linear-gradient(300deg, #ff5e00, #ff7700, #494949);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navitext {
+  font-family: "Fjalla One", sans-serif;
+}
+.profiletext {
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+.aboutext {
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+.programming {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+    url("./images/binary-numbers-leading-up-77q1wc8c9a1bhtx8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+
+}
+.programming2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+    url("./images/binary-numbers-leading-up-77q1wc8c9a1bhtx8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.programming3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+    url("./images/0_EYcbIYMIgt9QPCf3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.programming4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+    url("./images/PCB-scaled-aspect-ratio-5-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.dalom {
+  background-image: 
+    url("./images/photo-1510519138101-570d1dca3d66.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-origin: border-box;
+  background-clip: border-box;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+

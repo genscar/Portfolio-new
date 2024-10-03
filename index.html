@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escarda Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden bg-gradient-to-r from-[#000000] to-[#555555] ">
+
+   <nav class="sticky top-0 z-50 relative px-4 py-4 flex justify-between items-center bg-[#444444] navitext" >
+		<a class="text-5xl text-white font-bold leading-none" href="./index.html">Portfolio
+		</a>
+		<div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Mobile menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+			<li><a class="text-sm text-gray-400 hover:text-orange-500" href="#home">Home</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-orange-500 " href="#experiences">Experiences</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+      <li><a class="text-sm text-gray-400 hover:text-orange-500 " href="#background">Background</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-orange-500" href="#project">Project</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			<li><a class="text-sm text-gray-400 hover:text-orange-500" href="#contacts">Contact</a></li>
+      <li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			<li><a class="text-sm text-gray-400 hover:text-orange-500" target="_blank" href="https://www.linkedin.com/in/gen-scar-58842b28b/"><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="white"
+        class="bi bi-linkedin"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+        />
+      </svg></a></li>
+
+
+
+
+		</ul>
+</nav>
+
+
+
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-transparent backdrop-blur-md blur-1 border-r overflow-y-auto">
+
+			<div class="flex items-center mb-8">
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" href="#home">Home</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" href="#experiences">Experiences</a>
+					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" href="#background">Background</a>
+					</li>
+          
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white  hover:bg-blue-50 hover:text-blue-600 rounded" href="#project">Projects</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" href="#contacts">Contact</a>
+					</li>
+          <li class="mb-1"></li>
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank" href="https://www.linkedin.com/in/gen-scar-58842b28b/">LinkedIn
+</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    <script>
+    
+      document.addEventListener('DOMContentLoaded', function() {
+          
+          const burger = document.querySelectorAll('.navbar-burger');
+          const menu = document.querySelectorAll('.navbar-menu');
+      
+          if (burger.length && menu.length) {
+              for (var i = 0; i < burger.length; i++) {
+                  burger[i].addEventListener('click', function() {
+                      for (var j = 0; j < menu.length; j++) {
+                          menu[j].classList.toggle('hidden');
+                      }
+                  });
+              }
+          }
+      
+       
+          const close = document.querySelectorAll('.navbar-close');
+          const backdrop = document.querySelectorAll('.navbar-backdrop');
+      
+          if (close.length) {
+              for (var i = 0; i < close.length; i++) {
+                  close[i].addEventListener('click', function() {
+                      for (var j = 0; j < menu.length; j++) {
+                          menu[j].classList.toggle('hidden');
+                      }
+                  });
+              }
+          }
+      
+          if (backdrop.length) {
+              for (var i = 0; i < backdrop.length; i++) {
+                  backdrop[i].addEventListener('click', function() {
+                      for (var j = 0; j < menu.length; j++) {
+                          menu[j].classList.toggle('hidden');
+                      }
+                  });
+              }
+          }
+      });
+      </script>
+    </div>
+    <section id="home">
+    <div
+      class="w-full -xl flex align-items-center justify-content-center profiletext"
+    >
+      <header class="mb-8 text-center gradient-background w-full h-full p-8 ">
+        <h1 class="text-4xl font-bold mb-4">Genesis Escarda</h1>
+
+        <img
+          src="./images/bonso.jpg"
+          class="object-cover w-[300px] h-[300[px] rounded-full mx-auto border-2 border-[#000000]"
+          alt="Bootstrap Themes"
+          loading="lazy"
+        />
+        <p class="text-xl font-semibold mt-3">
+          Bachelor of Science Major in Computer Engineering Technology Graduate
+        </p>
+      </header>
+    </div>
+</section>
+    <section id="experiences" class="aboutext mb-8 programming text-white  rounded-lg">
+      <div class="container mt-5 mx-auto">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-check2-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+                />
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+                />
+              </svg>
+            </div>
+            <div class="">
+              <h3 class="fs-2 text-body-emphasis">Programming</h3>
+              <p>Strong knowledge in Java, Javascript, C++, and Python</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-arrow-through-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">System Troubleshooting</h3>
+              <p>
+                Experienced in doing computer software and hardware repairs in
+                actual workplace
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-mortarboard"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Surveillance System</h3>
+              <p>
+                Knowledgeable in installing CCTV cameras and their respective
+                Video Recorders
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shadow-lg mb-8 programming2  rounded-lg">
+      <div class="container">
+      <div class=" p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis aboutext text-white">Programming Experiences</h1>
+      </div>
+      <div class="row row-cols-2 row-cols-md-2 mb-2 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm" >
+            <div class="card-header py-3 aboutext">
+              <h4 class="my-0 fw-normal">Frontend</h4>
+            </div>
+            <div class="card-body">
+          
+              <ul class="list-unstyled mt-3 mb-4 aboutext">
+                <li>HTML</li>
+                <li>CSS</li>
+             
+                <li>SASS</li>
+                <li>ReactJS</li>
+                <li>Jquery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3 aboutext">
+              <h4 class="my-0 fw-normal">Backend</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4 aboutext">
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+               
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="background" class="rounded-t-lg shadow-md mt-2 text-white programming3 pt-2 ">
+      <div class=" text-center aboutext mx-auto">
+        <h2 class="text-6xl font-bold">Educational and Seminar background</h2>
+      </div>
+      <div class="ml-8 text-4xl aboutext">
+        <h1 class="font-semibold mb-2 ml-8">Educational Background</h1>
+        <ul class="list-disc ml-8 text-2xl">
+          <li>
+            <h1 class="font-bold">College:</h1>
+            Technological University of The Philippines - Talisay
+          </li>
+          <li>
+            <h1 class="font-bold">Tertiary:</h1>
+            Don Bosco Technical Institute - Victorias
+          </li>
+          <li>
+            <h1 class="font-bold">Secondary:</h1>
+            Don Bosco Technical Institute - Victorias
+          </li>
+          <li>
+            <h1 class="font-bold">Primary:</h1>
+            Jack and Jill - Victorias
+          </li>
+        </ul>
+        <h1 class="font-semibold mt-2 mb-2 ml-8">Seminars Attended</h1>
+        <ul class="list-disc ml-8 text-2xl text-blue-700 hover:underline">
+          <a
+            href="https://drive.google.com/file/d/1gJewoXjqIYQ-btvNMiXL1sLDTGTD7vdb/view"
+            target="_blank"
+          >
+            <li>
+              Udemy - The Complete 2023 Web Development Bootcamp by Dr. Angela
+              Yu
+            </li></a
+          >
+        </ul>
+      </div>
+    </section>
+
+    <div class=" p-5 text-center aboutext programming3 ">
+      <h2 class="text-6xl font-bold text-white">Companies Worked On:</h2>
+    </div>
+
+    <section
+      class="rounded-b-lg gap-10 flex flex-col md:flex-row items-center justify-center programming3"
+    >
+
+    
+      <div class="mb-20 p-10">
+        <img
+          src="./images/sidmax.jpg"
+          class="object-cover w-[200px] h-[200[px] rounded-full mx-auto border-2 border-indigo-900 rounded-full"
+          alt=""
+        />
+      </div>
+      <div class="mb-20 p-10">
+        <img
+          src="./images/mf.png"
+          class="w-[250px] h-[100px] border-2 border-gray-500 rounded-full bg-white"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="project" class="mx-8 p-6 bg-white rounded-lg flex flex-col justify-content-center align-items-center mb-8 shadow-lg mt-5 programming4 pt-8 pb-20">
+      <h1 class="aboutext text-6xl font-bold mb-20 text-white">Projects</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-content-center align-items-center">
+         
+        <div class="bg-green-100 p-4 rounded-lg shadow-md flex flex-col items-center">
+          <h2 class="text-xl font-semibold mb-2">Food Vlog</h2>
+          <p class="text-gray-700 mb-4 text-center">A Food Travel Vlog page that features various delicacies from Bacolod City</p>
+         <a href="./Projects/Escarda_B12/index.html" target="_blank"> <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Food Vlog</button>
+      </a></div>
+        
+        
+        <div class="bg-blue-100 p-4 rounded-lg shadow-md flex flex-col items-center">
+              <h2 class="text-xl font-semibold mb-2">Simon Game</h2>
+              <p class="text-gray-700 mb-4 text-center">A simple game where you must reproduce the sequences that appears</p>
+             <a href="./Projects/Simon Game Challenge/index.html" target="_blank"> <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Simon Game</button>
+         </a> </div>
+          
+    
+          <div class="bg-red-100 p-4 rounded-lg shadow-md flex flex-col items-center">
+              <h2 class="text-xl font-semibold mb-2">Cafe Menu</h2>
+              <p class="text-gray-700 mb-4 text-center">A Cafe Menu made with HTML and CSS</p>
+             <a href="./Projects/Cafe Menu/index.html" target="_blank"> <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Cafe Menu</button>
+          </a></div>
+
+          <div class="bg-green-100 p-4 rounded-lg shadow-md flex flex-col items-center">
+            <h2 class="text-xl font-semibold mb-2">Ferris Wheel</h2>
+            <p class="text-gray-700 mb-4 text-center">An animated Ferris Wheel made with HTML and CSS</p>
+           <a href="./Projects/Ferris wheel/index.html" target="_blank"> <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ferris Wheel</button>
+        </a></div>
+          
+          
+          <div class="bg-blue-100 p-4 rounded-lg shadow-md flex flex-col items-center">
+                <h2 class="text-xl font-semibold mb-2">Mondrian Art</h2>
+                <p class="text-gray-700 mb-4 text-center">A Mondrian painting made with HTML</p>
+               <a href="./Projects/Mondrian Painting.html" target="_blank"> <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Mondrian Art</button>
+           </a> </div>
+            
+      
+            <div class="bg-red-100 p-4 rounded-lg shadow-md flex flex-col items-center">
+                <h2 class="text-xl font-semibold mb-2">Penguin</h2>
+                <p class="text-gray-700 mb-4 text-center">A Penguin made with HTML elements</p>
+               <a href="./Projects/Penguin/index.html" target="_blank"> <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Penguin</button>
+            </a></div>
+          
+      </div>
+      
+  </section>
+
+  <section id="contacts"
+  class="dalom navitext p-8  rounded-lg mb-0 text-orange-500 "
+>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-1 py-1 mt-1">
+      <h1 class="text-4xl font-bold">Contacts</h1>
+      <ul class="nav flex-column text-2xl font-semibold">
+        <li>Email: gescard21@gmail.com</a></li>
+        <li>Phone No.:09688541752</a></li></ul>
+        
+    </footer>
+  </div>
+</section>
+  </body>
+</html>
