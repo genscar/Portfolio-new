@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+	<nav class= "relative w-full px-5 py-4 flex flex-row justify-center bg-[#800000] sticky top-0 z-50 h-36 backdrop-blur-sm md:flex-col">
+        <div class="absolute flex justify-start w-screen px-5">
+	<img src="./src/Technological_University_of_the_Philippines_Seal.svg.png" alt="" class=" d-inline-block align-text-top w-30 h-24">
+</div>
+<div class="font-bold text-4xl text-white navitext flex items-center justify-center">
+  <h1 id="Head" class="hidden xl:block text-center" >Technological University of the Philippines - Visayas</h1>
+	<h1 class="shortcut block mt-4 hidden sm:block md:block lg:block xl:hidden">
+		TUPV
+	</h1>
+</div>
+        <div class="absolute flex justify-end w-screen px-5">
+			<button class="navbar-burger flex items-center text-white p-3 lg:hidden">
+				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+        </div>
+		</div>
+		<ul class="hidden absolute top-3/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 flex-row lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 ">
+			<li><a class="text-sm text-white hover:text-blue-500 hover:underline" target="_blank"  href="index.html">Home</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-white hover:text-blue-500 hover:underline" target="_blank"  href="Register.html">Register</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-white hover:text-blue-500 hover:underline" target="_blank"  href="Output.html">Student</a></li>
+	</nav>
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#800000]/50 backdrop-blur-md blur-1 border-r overflow-y-auto">
+
+			<div class="flex items-center mb-8">
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+            <a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank"  href="./index.html">Home</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank"  href="./register.html">Register</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank"  href="./Output.html">Student</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </div>
+  </body>
+
+		
+
+	<body>
+		<div class="flex w-full justify-center mt-20">
+			<div id="studentContainer" class="flex-col lg:grid grid-cols-2 gap-5">  
+			</div>  
+			</div>
+<div id="deleteModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>Confirm Deletion</h2>
+        <p>Are you sure you want to delete this student?</p>
+        <button id="confirmDelete" class="bg-red-500">Delete</button>
+        <button onclick="closeModal()" class="bg-gray-500">Cancel</button>
+      </div>
+    </div>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/favico.js/0.3.10/favico.min.js" integrity="sha512-d9sMcIBjQTs74UtVxBT8z7b4NRFZrwD2rn5VJe/pBxjwMmxOuBDmYFzLmwssH9AUIhFKtWzoeZgDIp6Yc0g+jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="output.js" defer></script>
+    <script src="index.js"></script>
+</body>
+</html>

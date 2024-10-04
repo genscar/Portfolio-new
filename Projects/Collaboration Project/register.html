@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+	<nav class= "relative w-full px-5 py-4 flex flex-row justify-center bg-[#800000] sticky top-0 z-50 h-36 backdrop-blur-sm md:flex-col">
+        <div class="absolute flex justify-start w-screen px-5">
+	<img src="./src/Technological_University_of_the_Philippines_Seal.svg.png" alt="" class=" d-inline-block align-text-top w-30 h-24">
+</div>
+<div class="font-bold text-4xl text-white navitext flex items-center justify-center">
+  <h1 id="Head" class="hidden xl:block text-center" >Technological University of the Philippines - Visayas</h1>
+	<h1 class="shortcut block mt-4 hidden sm:block md:block lg:block xl:hidden">
+		TUPV
+	</h1>
+</div>
+        <div class="absolute flex justify-end w-screen px-5">
+			<button class="navbar-burger flex items-center text-white p-3 lg:hidden">
+				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+        </div>
+		</div>
+		<ul class="hidden absolute top-3/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 flex-row lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 ">
+			<li><a class="text-sm text-white hover:text-blue-500 hover:underline" target="_blank"  href="index.html">Home</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-white hover:text-blue-500 hover:underline" target="_blank"  href="Register.html">Register</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-white hover:text-blue-500 hover:underline" target="_blank"  href="Output.html">Student</a></li>
+	</nav>
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#800000]/50 backdrop-blur-md blur-1 border-r overflow-y-auto">
+
+			<div class="flex items-center mb-8">
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+            <a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank"  href="./index.html">Home</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank"  href="./register.html">Register</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded" target="_blank"  href="./Output.html">Student</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+    <section id="enroll" class="mt-[50px] text-center "><h1 class="text-center text-4xl">Registration Form</h1>
+      <h1 class="text-4xl font-semibold mb-[30px] mt-4">Learners Profile Form</h1>
+      <form id="enrollmentForm" class=" p-4 rounded">
+        <h1 class="font-semibold mb-4  text-2xl">1. T2MIS Auto Generated</h1>
+        <h2 class="font-semibold mb-4">
+          1.1 Unique Learner Identifier (ULI Number):
+        </h2>
+        <input
+          type="number"
+          id="uliNumber"
+          placeholder="ULI Number"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+
+        <h2 class="font-semibold mb-4">Entry Date</h2>
+        <input
+          title="EntryDate"
+          type="date"
+          id="entryDate"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+
+        <h1 class="font-semibold mb-4 text-2xl">2. Learner/Manpower Profile</h1>
+        <h2 class="font-semibold mb-4">2.1 Name</h2>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Full Name"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+        <h2 class="font-semibold mb-4">
+          2.2 Complete Permanent Mailing Address
+        </h2>
+        <input
+          type="text"
+          id="completeAddress"
+          placeholder="Complete Address"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+
+        <h1 class="font-semibold mb-4 text-2xl">3. Personal Information</h1>
+        <h2 class="font-semibold mb-4">3.1 Sex</h2>
+        <select
+          title="gender"
+          id="gender"
+          required
+          class="border border-gray-300 p-2 mb-4 w-1/2 rounded border-2 border-gray-900"
+        >
+          <option value="">--Select Sex--</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <h2 class="font-semibold mb-4">3.2 Civil Status</h2>
+        <input type="radio" id="married" name="civilStatus" value="Married" />
+        <label for="married">Married</label>
+        <input type="radio" id="widow" name="civilStatus" value="Widow" />
+        <label for="widow">Widow/er</label>
+        <input
+          type="radio"
+          id="separated"
+          name="civilStatus"
+          value="Separated"
+        />
+        <label for="separated">Separated</label>
+        <input
+          type="radio"
+          id="soloParent"
+          name="civilStatus"
+          value="Solo Parent"
+        />
+        <label for="soloParent">Solo Parent</label>
+
+        <h2 class="font-semibold mb-4 mt-4">3.3 Employment Status</h2>
+        <input
+          type="radio"
+          id="employed"
+          name="employmentStatus"
+          value="Employed"
+        />
+        <label for="employed">Employed</label>
+        <input
+          type="radio"
+          id="unemployed"
+          name="employmentStatus"
+          value="Unemployed"
+        />
+        <label for="unemployed">Unemployed</label>
+
+        <h2 class="font-semibold mb-4 mt-4">3.4 Birth Date</h2>
+        <input
+          title="bday"
+          type="date"
+          id="birthDate"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+        <h2 class="font-semibold mb-4">3.5 Birthplace</h2>
+        <input
+          type="text"
+          id="placeOfBirth"
+          placeholder="Place of Birth"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+
+        <h2 class="font-semibold mb-4">3.6 Educational Attainment</h2>
+        <select
+          title="educational_attainment"
+          id="educationalAttainment"
+          required
+          class="border border-gray-300 p-2 mb-4 w-1/2 rounded border-2 border-gray-900"
+        >
+          <option value="">--Select Educational Attainment--</option>
+          <option value="Pre-School">Pre-School (Nursery/Kinder/Preper)</option>
+          <option value="No Grade Completed">No Grade Completed</option>
+          <option value="Elementary Undergraduate">
+            Elementary Undergraduate
+          </option>
+          <option value="Elementary Graduate">Elementary Graduate</option>
+          <option value="Post Secondary Undergraduate">
+            Post Secondary Undergraduate
+          </option>
+          <option value="Post Secondary Graduate">
+            Post Secondary Graduate
+          </option>
+          <option value="Highschool Undergraduate">
+            Highschool Undergraduate
+          </option>
+          <option value="Highschool Graduate">Highschool Graduate</option>
+          <option value="Junior High Graduate">Junior High Graduate</option>
+          <option value="Senior High Graduate">Senior High Graduate</option>
+          <option value="College Undergraduate">College Undergraduate</option>
+          <option value="College Graduate or higher">
+            College Graduate or higher
+          </option>
+        </select>
+        <h2 class="font-semibold mb-4">3.7 Parent/Guardian</h2>
+        <input
+          type="text"
+          id="guardian"
+          placeholder="Guardian or Parent's Full Name"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+
+        <h2 class="font-semibold mb-4">
+          4. Learner/Trainee/Student (Clients) Classification:
+        </h2>
+        <select
+          class="border border-gray-300 p-2 mb-4 w-1/2 rounded border-2 border-gray-900"
+          id="classification"
+          required
+        >
+          <option value="">--Classification--</option>
+          <option value="Students">Students</option>
+          <option value="Out-of-School Youth">Out-of-School Youth</option>
+          <option value="Students">Students</option>
+          <option value="Out-of-School Youth">Out-of-School Youth</option>
+          <option value="Solo Parent">Solo Parent</option>
+          <option value="Solo Parent's Children">Solo Parent's Children</option>
+          <option value="Senior citizens">Senior citizens</option>
+          <option value="Displaced HEIs Teaching Personnel">
+            Displaced HEIs Teaching Personnel
+          </option>
+          <option value="Displaced Workers">Displaced Workers</option>
+          <option value="TVET Workers">TVET Workers</option>
+          <option value="Currently Employed Workers">
+            Currently Employed Workers
+          </option>
+          <option value="Employee with Contractual/Job-Order Status">
+            Employee with Contractual/Job-Order Status
+          </option>
+          <option value="TESDA Alumni">TESDA Alumni</option>
+          <option value="Urban and Rural Poor">Urban and Rural Poor</option>
+          <option value="Informal Workers">Informal Workers</option>
+          <option value="Industry Workers">Industry Workers</option>
+          <option value="Cooperatives">Cooperatives</option>
+          <option value="Family Enterprises">Family Enterprises</option>
+          <option value="Micro Entrepreneurs">Micro Entrepreneurs</option>
+          <option value="Family Members of Microentrpreneur">
+            Family Members of Microentrpreneur
+          </option>
+          <option value="Farmers and Fisherman">Farmers and Fisherman</option>
+          <option value="Community Trng. & Employment Coordinator">
+            Community Trng. & Employment Coordinator
+          </option>
+          <option value="Family Members of Persons in Crisis Situation">
+            Family Members of Persons in Crisis Situation
+          </option>
+          <option value="Family Members of Persons with Disabilities">
+            Family Members of Persons with Disabilities
+          </option>
+          <option value="Persons in Crisis Situation">
+            Persons in Crisis Situation
+          </option>
+          <option value="Persons with Disabilities">
+            Persons with Disabilities
+          </option>
+          <option value="Survivors of Human Trafficking">
+            Survivors of Human Trafficking
+          </option>
+          <option value="Drug Dependent Surrenderers">
+            Drug Dependent Surrenderers
+          </option>
+          <option value="Rebel Returnees or Decommissioned Combatants">
+            Rebel Returnees or Decommissioned Combatants
+          </option>
+          <option value="Inmates and Detainees">Inmates and Detainees</option>
+          <option value="Wounded-in-Action AFP & PNP Personnel">
+            Wounded-in-Action AFP & PNP Personnel
+          </option>
+          <option
+            value="Family Members of AFP and PNP Killed-and-Wounded in-Action"
+          >
+            Family Members of AFP and PNP Killed-and-Wounded in-Action
+          </option>
+          <option value="Family Members of Inmates and Detainees">
+            Family Members of Inmates and Detainees
+          </option>
+          <option value="Uniformed Personnel">Uniformed Personnel</option>
+        </select>
+
+        <h2 class="font-semibold mb-4">5. Type of Disability:</h2>
+        <select
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+          id="disability"
+          required
+        >
+          <option value="None">--None--</option>
+          <option value="Mental/Intellectual">Mental/Intellectual</option>
+          <option value="Psychosocial Disability">
+            Psychosocial Disability
+          </option>
+          <option value="Visual Disability">Visual Disability</option>
+          <option value="Speech Impairment">Speech Impairment</option>
+          <option value="Disability Due to Chronic Illness">
+            Disability Due to Chronic Illness
+          </option>
+          <option value="Orthopedic (Musculoskeletal) Disability">
+            Orthopedic (Musculoskeletal) Disability
+          </option>
+          <option value="Multiple Disabilities, specify">
+            Multiple Disabilities, specify
+          </option>
+          <option value="Learning Disability">Learning Disability</option>
+        </select>
+        <h2 class="font-semibold mb-4 mt-4">6. Causes of Disability</h2>
+        <input
+          type="radio"
+          id="congenital"
+          name="causesOfDisability"
+          value="Congenital/Inborn"
+        />
+        <label for="congenital">Congenital/Inborn</label>
+        <input
+          type="radio"
+          id="illness"
+          name="causesOfDisability"
+          value="Illness"
+        />
+        <label for="illness">Illness</label>
+        <input
+          type="radio"
+          id="injury"
+          name="causesOfDisability"
+          value="Injury"
+        />
+        <label for="injury">Injury</label>
+
+        <h2 class="font-semibold mt-4 mb-4">7. Taken NCAE/YP4SC Before?</h2>
+        <input type="radio" id="ncae_yes" name="ncaeStatus" value="Yes" />
+        <label for="ncae_yes">Yes</label>
+        <input type="radio" id="ncae_no" name="NCAE Status" value="No" />
+        <label for="ncae_no">No</label><br />
+        <label for="ncae_where">Where</label>
+        <input
+          type="text"
+          id="ncae_where"
+          class="border border-2 border-gray-900 p-2 mt-4 mb-4 w-1/2 rounded"
+        /><br />
+        <label for="ncae_when">When</label>
+        <input
+          title="when"
+          type="date"
+          name="NCAE Date Taken"
+          required
+          class="border border-2 border-gray-900 p-2 mb-4 mt-4 w-1/2 rounded"
+        /><br />
+        <label for="name_course">
+          <h2 class="font-semibold mt-4">8. Name of Course/Qualification</h2>
+        </label>
+        <input
+          type="text"
+          id="name_course"
+          name="Name of Course/Qualification"
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+        <label for="scholarship">
+          <h2 class="font-semibold mb-4 mt-4">
+            9. If Scholar, What Type of Scholarship Package (TWSP, PEFSA, STEP,
+            Others)?
+          </h2>
+        </label>
+        <input
+          type="text"
+          id="scholarship"
+          name="Scholarship Type"
+          class="border border-2 border-gray-900 p-2 mb-4 w-1/2 rounded"
+        />
+        <h2 class="font-semibold mb-4 ">10. Privacy Disclaimer</h2>
+        <input
+          type="radio"
+          id="disclaimer_yes"
+          name="Privacy Disclaimer"
+          value="Yes"
+        />
+        <label for="disclaimer_yes">Yes</label>
+        <input
+          type="radio"
+          id="disclaimer_no"
+          name="Privacy Disclaimer"
+          value="No"
+        />
+        <label for="disclaimer_no">No</label><br />
+
+        <div class="mb-4 mt-4">
+          <button
+            type="submit"
+            class="bg-blue-800 border border-2 border-gray-400 text-white py-2 px-4 rounded"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+      </div>
+    </section>
+    <footer class="bg-zinc-50 text-center dark:bg-neutral-700 lg:text-left fixed-bottom">
+      <div class="bg-black/5 p-4 text-center text-surface dark:text-white">
+        © 2024 Copyright:
+        <a href="https://tw-elements.com/">SDTP-12</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
